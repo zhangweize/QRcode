@@ -26,7 +26,6 @@ public class BufferedImageLuminanceSource extends LuminanceSource {
 
 	public BufferedImageLuminanceSource(BufferedImage image, int left, int top, int width, int height) {
 		super(width, height);
-
 		int sourceWidth = image.getWidth();
 		int sourceHeight = image.getHeight();
 		if (left + width > sourceWidth || top + height > sourceHeight) {
