@@ -47,7 +47,7 @@ public class QRCodeUtil {
 	private static BufferedImage createImage(String content, String imgPath, boolean needCompress) throws Exception {
 		Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
 		hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
-		hints.put(EncodeHintType.CHARACTER_SET, CHARSET);
+		hints.put(EncodeHintType.CHARACTER_SET, CHARSET); //±‡¬Î∏Ò Ω
 		hints.put(EncodeHintType.MARGIN, 1);
 		BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, QRCODE_SIZE, QRCODE_SIZE,
 				hints);
